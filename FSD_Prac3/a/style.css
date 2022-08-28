@@ -1,0 +1,33 @@
+.go {
+    color: green;
+  }
+  .stop {
+    color: red;
+  }
+
+div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+button{
+  height: 40px;
+  width: 80px;
+  font-weight: 600;
+  margin: 10px;
+  background-color: black;
+  color: aquamarine;
+  border-radius: 15px;
+}
+button:hover{
+  cursor: pointer;
+  background-color: chartreuse;
+  color: black;
+}
+
+#my_box h3{
+  font-size: xx-large;
+  font-weight: bolder;
+}

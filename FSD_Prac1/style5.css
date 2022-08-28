@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+/* CSS reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ddd;
+}
+.header{
+    /* border: 1px solid red; */
+    height: 100px;
+    box-shadow: 0 0 4px rgba(0,0,0,.15), 0 4px 5px rgba(0,0,0,.3); 
+    background-color: aliceblue;
+}
+.navbar{
+    float: right;
+    margin: 40px;
+    padding-right: 30px;
+}
+a{
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+.list a:hover{
+    background-color: blueviolet;
+}
+.heading{
+    /* border: 1px solid blue; */
+    height: 100px;
+    width: 500px;
+    float: left;
+}
+img{
+    float: left;
+    padding: 10px 0;
+}
+.header .heading h1{
+    float: right;
+    padding: 25px 70px;
+}
+
+/* ###################### Section Styling ######################### */
+.wrapper{
+    /* border: 1px solid red; */
+    margin-top: 0px;
+}
+.wrapper .sidebar {
+    background: rgb(5,68,104);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+.wrapper .sidebar .profile{
+    margin-bottom: 30px;
+    /* padding: 40px; */
+    padding-left: 60px;
+}
+.wrapper .sidebar .profile img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.content{
+    padding: 50px;
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+.menu-item li a{
+    display: block;
+    padding: 13px 30px;
+    border-bottom: 1px solid #10558d;
+    color: rgb(241, 237, 237);
+    font-size: 16px;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+.menu-item .icon{
+    color: #dee4ec;
+    width: 30px;
+    display: inline-block;
+}
+
+/* link hover */
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+    color: #0c7db1;
+    background: white;
+    border-right: 2px solid rgb(5,68,104);
+}
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon{
+    color: #0c7db1;
+}
+.wrapper .sidebar ul li a:hover::before,
+.wrapper .sidebar ul li a.active::before{
+    display: block;
+}
+
+/* top menu bar */
+.wrapper .section{
+    width: calc(100% - 225px);
+    margin-left: 225px;
+    transition: all 0.5s ease;
+}
+.wrapper .section .top_navbar{
+    /* background-color: rgb(7,105,185); */
+    height: 50px;
+    display: flex;
+    margin: 10px 0px;
+}
+.wrapper .section .top_navbar .hamburger a{
+    font-size: 28px;
+    color: black;
+}
+.wrapper .section .top_navbar .hamburger a:hover{
+    color: black;
+}
+body.active .wrapper .sidebar{
+    left: -225px;
+}
+
+body.active .wrapper .section{
+    margin-left: 0;
+    width: 100%;
+}
+
+
+/* ###################### Article Styling ####################### */
+.article-section{
+    /* float: left; */
+    padding-left: 300px;
+    padding-right: 200px;
+}
+
+.article-section .box{
+    margin-top: 60px;
+    /* border: 2px solid black; */
+    height: 350px;
+    background-color: aliceblue;
+    box-shadow: 5px 5px 20px 0px #aaa;
+}
+.about-section{
+    float: left;
+    height: 100%;
+    width: 50%;
+    padding: 15px;
+    /* border: 2px solid red; */
+}
+.about-section h1{
+    padding: 30px 30px;
+    line-height: 15px;
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.fullname {
+    padding-left: 30px;
+    display: flex;
+    line-height: 50px;
+    font-size: 20px;
+}
+.email{
+    padding-left: 30px;
+    display: flex;
+    line-height: 50px;
+    font-size: 20px;
+}
+.phone{
+    padding-left: 30px;
+    display: flex;
+    line-height: 50px;
+    font-size: 20px;
+}
+.address{
+    padding-left: 30px;
+    display: flex;
+    line-height: 50px;
+    font-size: 20px;
+}
+.about-section .first-ans{
+    margin-left: 90px;
+}
+.about-section .second-ans{
+    margin-left: 120px;
+}
+.about-section .third-ans{
+    margin-left: 80px;
+}
+.about-section .fourth-ans{
+    margin-left: 120px;
+}
+
+.img-section{
+    float: right;
+    height: 100%;
+    width: 50%;
+}
+.img-section .img-box{
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid red; */
+}
+.img-box img{
+    height: 100%;
+    width: 100%;
+    padding: 20px 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.project-section{
+    margin-top: 20px;
+}
+/* ###################### Footer-section #################### */
+.footer-section{
+    margin-top: 110px;
+    /* border: 2px solid red; */
+    background-color: black;
+}
+.footer-section .container{
+    text-align: center;
+}
+.container a,p{
+    color: white;
+}
+.container.social-media{
+    display: inline-block;
+}
+.container .social-media a{
+    padding: 25px 10px 8px;
+    /* border: 1px solid white; */
+    /* margin: 0 3px; */
+    /* padding: 5px; */
+    /* border-radius: 25px; */
+}
+.container .first-content,.second-content,p{
+    padding: 5px 0;
+}

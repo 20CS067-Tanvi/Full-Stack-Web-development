@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile Page</title>
+    <link rel="stylesheet" href="style5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header class="header">
+        <!-- logo + nav -->
+        <div class="heading">
+            <img src="/Images/logo3.png" alt="logo" width="80">
+            <h1>My Profile Page</h1>
+        </div>
+        <nav class="navbar">
+            <ul class="list">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+            </ul>
+        </nav>
+    </header>
+    <!-- sidebar + posts -->
+    <section class="wrapper">
+        <!-- Sidebar -->
+        <div class="sidebar">
+           <div class="profile">
+            <img src="/Images/profile.png" alt="profile image">
+           </div>
+           <div class="content">
+            <h3>Tanvi Radia</h3>
+            <p>Student</p>
+           </div>
+           <!-- menu item -->
+           <ul class="menu-item">
+            <li><a href="#" class="active">
+                <span class="icon"><i class="fas fa-home"></i></span>
+                <span class="item">Home</span>
+               </a></li>
+               <li><a href="#">
+                <span class="icon"><i class="fas fa-desktop"></i></span>
+                <span class="item">My Dashboard</span>
+               </a></li>
+               <li><a href="#">
+                <span class="icon"><i class="fas fa-user-friends"></i></span>
+                <span class="item">People</span>
+               </a></li>
+               <li><a href="#">
+                <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
+                <span class="item">Performance</span>
+               </a></li>
+               <li><a href="#">
+                <span class="icon"><i class="fas fa-database"></i></span>
+                <span class="item">Development</span>
+               </a></li>
+               <li><a href="#">
+                <span class="icon"><i class="fas fa-chart-line"></i></span>
+                <span class="item">Reports</span>
+               </a></li>
+               <li><a href="#">
+                <span class="icon"><i class="fas fa-cog"></i></span>
+                <span class="item">Settings</span>
+               </a></li>
+           </ul>
+        </div>
+        <!-- top menu bar -->
+        <div class="section">
+            <div class="top_navbar">
+                <div class="hamburger">
+                    <a href="#"><i class="fas fa-bars"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <article>
+        <div class="article-section">
+            <div class="box">
+                <div class="about-section">
+                        <h1>Professional Details</h1>
+                        <div class="about-content">
+                            <div class="fullname">
+                                <div>Full name</div>
+                                <div class="first-ans">Tanvi Radia</div>
+                            </div>
+                            <div class="email">
+                                <div>Email</div>
+                                <div class="second-ans">abc@gmail.com</div>
+                            </div>
+                            <div class="phone">
+                                <div>Experience</div>
+                                <div class="third-ans">15 Years</div>
+                            </div>
+                            <div class="address">
+                                <div>Degree</div>
+                                <div class="fourth-ans">MBA</div>
+                            </div>
+                        </div>
+                </div>
+                <!-- Image section -->
+                   <div class="img-section">
+                    <div class="img-box">
+                        <img src="/Images/profile.jfif" alt="profile-img">
+                    </div>
+                   </div>
+            </div>
+        </div>
+    </article>
+    <!-- footer section -->
+        <footer>
+            <div class="footer-section">
+                <div class="container">
+                    <div class="social-media">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        </div>
+                        <div class="first-content">
+                            <a href="#">Info</a>
+                            <a href="#">Support</a>
+                            <a href="#">Marketing</a>
+                        </div>
+                        <div class="second-content">
+                            <a href="#">Terms of Use</a>
+                            <a href="#">Privacy Policy</a>
+                        </div>
+                        <p>copyright &copy; Tanvi Radia (20CS067)</p>
+                </div>
+            </div>
+        </footer>
+    <script>
+        // Sidebar effects
+        var hamburger = document.querySelector(".hamburger");
+        hamburger.addEventListener("click",function(){
+            document.querySelector("body").classList.toggle("active");
+        })
+    </script>
+</body>
+</html>
